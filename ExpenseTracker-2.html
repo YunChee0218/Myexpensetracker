@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Expense Tracker-2</title>
+    <link rel="stylesheet" href="./ExpenseTracker-2.css">
+</head>
+<body>
+    <div class="info-List">
+        <h1>Expense Tracker</h1>
+        
+        <div class="info">
+            <label for="balance">Balance: </label> 
+            <div id="balance">100</div>
+        </div>
+        <div class="info">
+            <label for="income">Income: </label> 
+            <div id="income">100</div>
+        </div>
+        <div class="info">
+            <label for="expense">Expense: </label> 
+            <div id="expense">100</div>
+        </div>
+    </div>
+
+    <div class="container">
+        <p>Add A New Item:</p>
+        <div class="input-info">
+            <label for="expense-input">Name:</label>
+            <input id="expense-input" type="text" placeholder="Where was the expense made", value="">
+        </div>
+        <div class="input-info">
+            <label for="expense-date">Date:</label>
+            <input id="expense-date" type="date">
+        </div>
+        <div class="input-info">
+            <label for="expense-amount">Amount:</label>
+            <input id="expense-amount" type="number" placeholder="$">
+        </div>
+
+
+        <div class="addButton">
+            <button id="addIncomeBtn">Add Income</button>
+            <button id="addExpenseBtn">Add Expense</button>
+        </div>
+    </div>
+    
+
+    
+
+    
+
+    <div class="tableList">
+        <table id="tableExpense">
+
+        </table>
+    </div>
+    
+</body>
+<script src="ExpenseTracker-2.js"></script>
+
+</html>

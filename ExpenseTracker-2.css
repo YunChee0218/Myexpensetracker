@@ -1,0 +1,177 @@
+body{
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    width: 550px;
+    height: 250px;
+    background-color: rgb(202, 142, 202);
+    margin-top: 20px;
+    position: relative;
+    border-radius: 25px;
+    padding-top: 20px;
+}
+
+h1,p{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+
+.input-info{
+    display: flex;
+    flex-direction: row;
+    padding: 5px 10px 10px 10px;
+    align-items: left;
+    justify-content: space-between;
+    font-size: 1.2em;
+}
+
+#expense-input, #expense-date, #expense-amount{
+    width: 450px;
+    height: 25px;
+    border: none;
+}
+
+
+.addButton{
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 5px;
+    
+}    
+
+#addIncomeBtn, #addExpenseBtn{
+    font-size: 1.2em;
+    border-radius: 6px;
+    cursor: pointer;
+    padding: 10px;
+}
+    
+#addIncomeBtn{
+    background-color: green;
+}
+
+#addIncomeBtn:hover{
+    background-color: rgb(33, 190, 33);
+}
+
+#addExpenseBtn{
+    background-color: red;
+}
+
+#addExpenseBtn:hover{
+    background-color: rgb(240, 111, 111);
+}
+
+input{
+    margin-left: 10px;
+    align-items: left;
+    justify-content: left;
+}
+
+table{
+    margin-top: 40px;
+    width: 550px;
+    
+    border-collapse: separate;
+    border-spacing: 0 15px;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+thead{
+    background-color: white;
+    text-align: center;
+}
+
+
+
+tr:hover{
+    background-color: #ddd;
+}
+
+.tableList{
+    display: flex;
+}
+
+.info-List{
+    width: 450px;
+    margin-top: 20px;
+}
+
+.info{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 10px;
+    font-size: 1.3em;
+}
+
+#balance{
+    width: 300px;
+    background-color: gold;
+    text-align: center;
+    align-items: center;
+    border-radius: 10px;
+}
+
+#income{
+    width: 300px;
+    background-color: rgb(35, 180, 47);
+    text-align: center;
+    align-items: center;
+    border-radius: 10px;
+}
+
+#expense{
+    width: 300px;
+    background-color: rgb(197, 68, 68);
+    text-align: center;
+    align-items: center;
+    border-radius: 10px;
+    
+}
+
+tr.in td:first-child{
+    
+    border-left: 3px solid green;
+}
+
+tr.out td:first-child{
+    border-left: 3px solid red;
+}
+
+.removeBtn{
+    border: none;
+    font-weight: 600;
+
+}
+
+.removeBtn:hover{
+    cursor: pointer;
+    background-color: grey;
+    border-radius: 10px;
+}
+
+td{
+    padding: 8px;
+}
+
+td:first-child{
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+td:last-child{
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
